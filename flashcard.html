@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto VI - Leonida State</title>
+    <link rel="stylesheet" href="%23style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Grand Theft Auto VI: <strong>O jogo mais aguardado da história</strong></h1>
+        <p class="subtitle">O novo capítulo definitivo da Rockstar Games chega para revolucionar a indústria.</p>
+    </header>
+
+    <main class="main-content">
+        
+        <section class="hero-section">
+            <div class="image-wrapper">
+                <img src="Gta6.jpg" alt="GTA VI Oficial Artwork" class="gta-banner">
+            </div>
+            
+            <div class="synopsis-box">
+                <h2>A Trama & O Cenário</h2>
+                <p>Ambientado no gigantesco estado de <strong>Leonida</strong>, baseado na Flórida, o jogo traz de volta a icônica e glamorosa <strong>Vice City</strong> sob uma perspectiva moderna, satírica e hiperconectada pelas redes sociais.</p>
+                <p>A história segue a dupla criminosa <strong>Lucia</strong> e <strong>Jason</strong>. Mas quando uma tentativa de ganhar dinheiro fácil dá errado, eles se encontram no meio de uma enorme conspiração criminal que se estende por praias iluminadas por neon e pântanos perigosos.</p>
+                <div class="meta-info">
+                    <p><strong>Plataformas:</strong> PlayStation 5 | Xbox Series X|S</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-section">
+            <h2 class="section-title">Pilares do Jogo</h2>
+            <div class="container">
+                
+                <button class="card" onclick="desvirarOutros(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>História</h2>
+                            <p>A história de GTA VI se passa em Vice City, com foco na dupla Jason e Lucia. O jogo promete uma narrativa envolvendo e cheia de reviravoltas.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Detalhes da Trama</h3>
+                            <p>Inspirado no casal criminoso Bonnie e Clyde, o enredo explorará as dinâmicas de assaltos e a confiança mútua em uma Leonida moderna.</p>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="card" onclick="desvirarOutros(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Gráficos</h2>
+                            <p>GTA VI traz gráficos de última geração, com atenção aos detalhes e realismo impressionante, elevando o padrão da indústria de jogos.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Tecnologia RAGE</h3>
+                            <p>Utilizando uma versão aprimorada do motor gráfico da Rockstar, o jogo contará com física avançada de líquidos e iluminação global.</p>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="card" onclick="desvirarOutros(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Jogabilidade</h2>
+                            <p>A jogabilidade de GTA VI é mais fluida e imersiva, com mecânicas aprimoradas e novas funcionalidades que tornam a experiência envolvendo.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Mecânicas Novas</h3>
+                            <p>O jogo trará um sistema de inventário limitado mais tático, interações profundas com pedestres e uso dinâmico de smartphones.</p>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="card" onclick="desvirarOutros(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Multiplayer</h2>
+                            <p>O modo multiplayer de GTA VI promete ser expansivo e dinâmico, oferecendo uma experiência online robusta e cheia de possibilidades.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Novo GTA Online</h3>
+                            <p>Uma evolução completa com servidores mais estáveis, atualizações constantes no mapa de Leonida e novos modos de facções criminosas.</p>
+                        </div>
+                    </div>
+                </button>
+
+            </div>
+        </section>
+
+        <section class="media-footer-section">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IpSDW3Mq-7E" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="info-links-box">
+                <h3>Central de Informações</h3>
+                <p>Fique por dentro de todas as novidades oficiais, anúncios de trailers e atualizações da comunidade pelos canais recomendados:</p>
+                <div class="links-grid">
+                    <a href="https://www.rockstargames.com/VI/" target="_blank" class="info-btn btn-primary">Website Oficial Rockstar</a>
+                    <a href="https://www.youtube.com/@RockstarGames" target="_blank" class="info-btn">Canal do YouTube</a>
+                    <a href="https://www.rockstargames.com/newswire" target="_blank" class="info-btn">Rockstar Newswire</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; Desenvolvido por Geba</p>
+    </footer>
+
+    <script>
+        function desvirarOutros(cardClicado) {
+            const todosOsCards = document.querySelectorAll('.card');
+            todosOsCards.forEach(card => {
+                if (card !== cardClicado) {
+                    card.classList.remove('flipped');
+                }
+            });
+            cardClicado.classList.toggle('flipped');
+        }
+    </script>
+</body>
+
+</html>
